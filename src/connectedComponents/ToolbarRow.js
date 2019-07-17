@@ -75,7 +75,7 @@ class ToolbarRow extends Component {
           const menuOptionEntry = {
             value: menuOption.target,
             icon: menuOption.icon,
-            bottomLabel: menuOption.label,
+            bottomLabel: this.props.t(menuOption.label),
           };
           const from = menuOption.from || 'right';
 

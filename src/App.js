@@ -38,6 +38,10 @@ import i18n from '@ohif/i18n';
 import setupTools from './setupTools.js';
 import store from './store';
 
+import locales from './locales/zh-CN';
+
+i18n.addLocales(locales);
+
 // ~~~~ APP SETUP
 initCornerstoneTools({
   globalToolSyncEnabled: true,
