@@ -31,7 +31,7 @@ COPY package.json /usr/src/app/package.json
 COPY yarn.lock /usr/src/app/yarn.lock
 
 # Run the install before copying the rest of the files
-RUN yarn install
+RUN yarn config set registry https://registry.npm.taobao.org && yarn install
 
 ENV PATH /usr/src/app/node_modules/.bin:$PATH
 ENV GENERATE_SOURCEMAP=false
